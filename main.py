@@ -128,7 +128,7 @@ def decide(me,df):
                move_options.remove('R')
 
     #print(move_options)
-    if move_options is None:
+    if not move_options:
        return "T"
     else:
        return move_options[random.randrange(len(move_options))]
